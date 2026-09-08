@@ -23,7 +23,7 @@ export function Hero() {
           <p className="small-resume">Full-stack, AI automation, and cloud-native software</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-          <a href="/Vinayak_FullStackAI_Engineer.pdf" download className="button">
+          <a href="/SumitKushwahaResume.pdf" download className="button">
             Resume
           </a>
         </ScrollAnimation>

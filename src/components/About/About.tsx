@@ -50,7 +50,7 @@ export function About() {
           </div>
           <div className="experience-item">
             <h4>Web Design Intern (MERN Stack) - BrainyBeam Info-Tech Pvt. Ltd., Ahmedabad</h4>
-            <p>10 June 2025 - 9 July 2025 (30 Days)</p>
+            <p>10 June 2025 - 9 July 2025</p>
           </div>
         </div>
 
