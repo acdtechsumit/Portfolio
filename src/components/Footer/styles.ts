@@ -9,6 +9,13 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-between;
 
+  &.footer-hidden {
+    display: none;
+  }
+
+  &.footer-ready {
+    display: flex;
+  }
 
   .logo{
     font-size: 2.8rem;

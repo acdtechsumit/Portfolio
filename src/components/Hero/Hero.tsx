@@ -40,21 +40,23 @@ export function Hero() {
           </ScrollAnimation>
         </div>
 
-        <div className="technology-block">
-          <span className="toolkit-title">Technology Stack</span>
-          <div className="toolkit-icons">
-            <img src={java} alt="Java" />
-            <img src={springBoot} alt="Spring Boot" />
-            <img src={reactIcon} alt="React" />
-            <img src={jsIcon} alt="JavaScript" />
-            <img src={nodeIcon} alt="Node.js" />
-            <img src={mongodb} alt="MongoDB" />
-            <img src={docker} alt="Docker" />
-            <img src={maven} alt="Maven" />
-            <img src={postman} alt="Postman" />
-            <img src={aws} alt="AWS" />
+        <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
+          <div className="technology-block">
+            <span className="toolkit-title">Technology Stack</span>
+            <div className="toolkit-icons">
+              <img src={java} alt="Java" />
+              <img src={springBoot} alt="Spring Boot" />
+              <img src={reactIcon} alt="React" />
+              <img src={jsIcon} alt="JavaScript" />
+              <img src={nodeIcon} alt="Node.js" />
+              <img src={mongodb} alt="MongoDB" />
+              <img src={docker} alt="Docker" />
+              <img src={maven} alt="Maven" />
+              <img src={postman} alt="Postman" />
+              <img src={aws} alt="AWS" />
+            </div>
           </div>
-        </div>
+        </ScrollAnimation>
 
         <div className="hero-actions">
           <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Container } from './styles'
 import reactIcon from '../../assets/react-icon.svg'
 import linkedin from '../../assets/linkedin.svg'
@@ -7,8 +8,25 @@ import telegram from '../../assets/telegram.svg'
 import instagramIcon from '../../assets/instagram.svg'
 
 export function Footer() {
+  const [ready, setReady] = useState(false)
+
+  useEffect(() => {
+    const markReady = () => setReady(true)
+
+    if (document.readyState === 'complete') {
+      markReady()
+      return
+    }
+
+    window.addEventListener('load', markReady, { once: true })
+
+    return () => {
+      window.removeEventListener('load', markReady)
+    }
+  }, [])
+
   return (
-    <Container className="footer">
+    <Container className={`footer ${ready ? 'footer-ready' : 'footer-hidden'}`}>
       <div>
         <p>
           Built with React, TypeScript, and Vite <img src={reactIcon} alt="React" />
