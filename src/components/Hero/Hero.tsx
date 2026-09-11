@@ -60,7 +60,7 @@ export function Hero() {
 
         <div className="hero-actions">
           <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
-            <a href="/SumitKushwahaResume.pdf" download className="button">
+            <a href="https://kushwahasumit.vercel.app/SumitKushwahaResume.pdf" download className="button">
               Resume
             </a>
           </ScrollAnimation>
